@@ -352,9 +352,7 @@ $(".btnAgregarProducto").click(function(){
 
     		sumarTotalPrecios()
 
-    		// AGREGAR IMPUESTO
-	        
-	        agregarImpuesto()
+    		
 
 	        // PONER FORMATO AL PRECIO DE LOS PRODUCTOS
 
@@ -458,9 +456,7 @@ $(".formularioVenta").on("change", "input.nuevaCantidadProducto", function(){
 
 	sumarTotalPrecios()
 
-	// AGREGAR IMPUESTO
-	        
-    agregarImpuesto()
+
 
     // AGRUPAR PRODUCTOS EN FORMATO JSON
 
@@ -500,38 +496,6 @@ function sumarTotalPrecios(){
 
 }
 
-/*=============================================
-FUNCIÓN AGREGAR IMPUESTO
-=============================================*/
-
-function agregarImpuesto(){
-
-	var impuesto = $("#nuevoImpuestoVenta").val();
-	var precioTotal = $("#nuevoTotalVenta").attr("total");
-
-	var precioImpuesto = Number(precioTotal * impuesto/100);
-
-	var totalConImpuesto = Number(precioImpuesto) + Number(precioTotal);
-	
-	$("#nuevoTotalVenta").val(totalConImpuesto);
-
-	$("#totalVenta").val(totalConImpuesto);
-
-	$("#nuevoPrecioImpuesto").val(precioImpuesto);
-
-	$("#nuevoPrecioNeto").val(precioTotal);
-
-}
-
-/*=============================================
-CUANDO CAMBIA EL IMPUESTO
-=============================================*/
-
-$("#nuevoImpuestoVenta").change(function(){
-
-	agregarImpuesto();
-
-});
 
 /*=============================================
 FORMATO AL PRECIO FINAL

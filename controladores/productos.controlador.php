@@ -25,9 +25,8 @@ class ControladorProductos{
 		if(isset($_POST["nuevaDescripcion"])){
 
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevaDescripcion"]) &&
-			   preg_match('/^[0-9]+$/', $_POST["nuevoStock"]) &&	
-			   preg_match('/^[0-9.]+$/', $_POST["nuevoPrecioCompra"]) &&
-			   preg_match('/^[0-9.]+$/', $_POST["nuevoPrecioVenta"])){
+			   preg_match('/^[0-9]+$/', $_POST["nuevoStock"]) &&
+			   preg_match('/^[0-9]+$/', $_POST["nuevoPrecioVenta"])){
 
 		   		/*=============================================
 				VALIDAR IMAGEN
@@ -102,7 +101,6 @@ class ControladorProductos{
 							   "codigo" => $_POST["nuevoCodigo"],
 							   "descripcion" => $_POST["nuevaDescripcion"],
 							   "stock" => $_POST["nuevoStock"],
-							   "precio_compra" => $_POST["nuevoPrecioCompra"],
 							   "precio_venta" => $_POST["nuevoPrecioVenta"],
 							   "imagen" => $ruta);
 
@@ -163,8 +161,7 @@ class ControladorProductos{
 
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarDescripcion"]) &&
 			   preg_match('/^[0-9]+$/', $_POST["editarStock"]) &&	
-			   preg_match('/^[0-9.]+$/', $_POST["editarPrecioCompra"]) &&
-			   preg_match('/^[0-9.]+$/', $_POST["editarPrecioVenta"])){
+			   preg_match('/^[0-9]+$/', $_POST["editarPrecioVenta"])){
 
 		   		/*=============================================
 				VALIDAR IMAGEN
@@ -251,7 +248,6 @@ class ControladorProductos{
 							   "codigo" => $_POST["editarCodigo"],
 							   "descripcion" => $_POST["editarDescripcion"],
 							   "stock" => $_POST["editarStock"],
-							   "precio_compra" => $_POST["editarPrecioCompra"],
 							   "precio_venta" => $_POST["editarPrecioVenta"],
 							   "imagen" => $ruta);
 

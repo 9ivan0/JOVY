@@ -98,7 +98,6 @@ if($xml){
            <th>Cliente</th>
            <th>Vendedor</th>
            <th>Forma de pago</th>
-           <th>Neto</th>
            <th>Total</th> 
            <th>Fecha</th>
            <th>Acciones</th>
@@ -145,11 +144,9 @@ if($xml){
 
                   $respuestaUsuario = ControladorUsuarios::ctrMostrarUsuarios($itemUsuario, $valorUsuario);
 
-                  echo '<td>'.$respuestaUsuario["nombre"].'</td>
+                  echo '<td>'.$respuestaUsuario["nombre"].'</td>';
 
-                  <td>'.$value["metodo_pago"].'</td>
-
-                  <td>$ '.number_format($value["neto"],2).'</td>
+                  echo '<td>'.$value["metodo_pago"].'</td>
 
                   <td>$ '.number_format($value["total"],2).'</td>
 

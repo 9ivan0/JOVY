@@ -188,7 +188,7 @@ if($_SESSION["perfil"] == "Especial"){
                       <thead>
 
                         <tr>
-                          <th>Impuesto</th>
+                          
                           <th>Total</th>      
                         </tr>
 
@@ -198,21 +198,7 @@ if($_SESSION["perfil"] == "Especial"){
                       
                         <tr>
                           
-                          <td style="width: 50%">
-                            
-                            <div class="input-group">
-                           
-                              <input type="number" class="form-control input-lg" min="0" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" placeholder="0" required>
-
-                               <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>
-
-                               <input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>
-
-                              <span class="input-group-addon"><i class="fa fa-percent"></i></span>
                         
-                            </div>
-
-                          </td>
 
                            <td style="width: 50%">
                             

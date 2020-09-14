@@ -61,7 +61,6 @@ if($_SESSION["perfil"] == "Vendedor"){
            <th>Descripción</th>
            <th>Categoría</th>
            <th>Stock</th>
-           <th>Precio de compra</th>
            <th>Precio de venta</th>
            <th>Agregado</th>
            <th>Acciones</th>
@@ -189,21 +188,6 @@ MODAL AGREGAR PRODUCTO
 
             </div>
 
-             <!-- ENTRADA PARA PRECIO COMPRA -->
-
-             <div class="form-group row">
-
-                <div class="col-xs-6">
-                
-                  <div class="input-group">
-                  
-                    <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span> 
-
-                    <input type="number" class="form-control input-lg" id="nuevoPrecioCompra" name="nuevoPrecioCompra" step="any" min="0" placeholder="Precio de compra" required>
-
-                  </div>
-
-                </div>
 
                 <!-- ENTRADA PARA PRECIO VENTA -->
 
@@ -219,39 +203,7 @@ MODAL AGREGAR PRODUCTO
                 
                   <br>
 
-                  <!-- CHECKBOX PARA PORCENTAJE -->
-
-                  <div class="col-xs-6">
-                    
-                    <div class="form-group">
-                      
-                      <label>
-                        
-                        <input type="checkbox" class="minimal porcentaje" checked>
-                        Utilizar procentaje
-                      </label>
-
-                    </div>
-
-                  </div>
-
-                  <!-- ENTRADA PARA PORCENTAJE -->
-
-                  <div class="col-xs-6" style="padding:0">
-                    
-                    <div class="input-group">
-                      
-                      <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="40" required>
-
-                      <span class="input-group-addon"><i class="fa fa-percent"></i></span>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-            </div>
+                  
 
             <!-- ENTRADA PARA SUBIR FOTO -->
 
@@ -391,21 +343,7 @@ MODAL EDITAR PRODUCTO
 
             </div>
 
-             <!-- ENTRADA PARA PRECIO COMPRA -->
-
-             <div class="form-group row">
-
-                <div class="col-xs-6">
-                
-                  <div class="input-group">
-                  
-                    <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span> 
-
-                    <input type="number" class="form-control input-lg" id="editarPrecioCompra" name="editarPrecioCompra" step="any" min="0" required>
-
-                  </div>
-
-                </div>
+     
 
                 <!-- ENTRADA PARA PRECIO VENTA -->
 
@@ -421,39 +359,7 @@ MODAL EDITAR PRODUCTO
                 
                   <br>
 
-                  <!-- CHECKBOX PARA PORCENTAJE -->
-
-                  <div class="col-xs-6">
-                    
-                    <div class="form-group">
-                      
-                      <label>
-                        
-                        <input type="checkbox" class="minimal porcentaje" checked>
-                        Utilizar procentaje
-                      </label>
-
-                    </div>
-
-                  </div>
-
-                  <!-- ENTRADA PARA PORCENTAJE -->
-
-                  <div class="col-xs-6" style="padding:0">
-                    
-                    <div class="input-group">
-                      
-                      <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="40" required>
-
-                      <span class="input-group-addon"><i class="fa fa-percent"></i></span>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-            </div>
+                 
 
             <!-- ENTRADA PARA SUBIR FOTO -->
 

@@ -37,7 +37,7 @@
 
 					if($_SESSION["foto"] != ""){
 
-						echo '<img src="'.$_SESSION["foto"].'" class="user-image">';
+						echo '<img src=" '.$_SESSION["foto"].'" class="user-image">';
 
 					}else{
 
@@ -49,7 +49,7 @@
 
 					?>
 						
-						<span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span>
+						<span class="hidden-xs"> <?php  echo $_SESSION["nombre"]; ?></span>
 
 					</a>
 

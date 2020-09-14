@@ -88,65 +88,7 @@ CAPTURANDO LA CATEGORIA PARA ASIGNAR CÓDIGO
 
 // })
 
-/*=============================================
-AGREGANDO PRECIO DE VENTA
-=============================================*/
-$("#nuevoPrecioCompra, #editarPrecioCompra").change(function(){
 
-	if($(".porcentaje").prop("checked")){
-
-		var valorPorcentaje = $(".nuevoPorcentaje").val();
-		
-		var porcentaje = Number(($("#nuevoPrecioCompra").val()*valorPorcentaje/100))+Number($("#nuevoPrecioCompra").val());
-
-		var editarPorcentaje = Number(($("#editarPrecioCompra").val()*valorPorcentaje/100))+Number($("#editarPrecioCompra").val());
-
-		$("#nuevoPrecioVenta").val(porcentaje);
-		$("#nuevoPrecioVenta").prop("readonly",true);
-
-		$("#editarPrecioVenta").val(editarPorcentaje);
-		$("#editarPrecioVenta").prop("readonly",true);
-
-	}
-
-})
-
-/*=============================================
-CAMBIO DE PORCENTAJE
-=============================================*/
-$(".nuevoPorcentaje").change(function(){
-
-	if($(".porcentaje").prop("checked")){
-
-		var valorPorcentaje = $(this).val();
-		
-		var porcentaje = Number(($("#nuevoPrecioCompra").val()*valorPorcentaje/100))+Number($("#nuevoPrecioCompra").val());
-
-		var editarPorcentaje = Number(($("#editarPrecioCompra").val()*valorPorcentaje/100))+Number($("#editarPrecioCompra").val());
-
-		$("#nuevoPrecioVenta").val(porcentaje);
-		$("#nuevoPrecioVenta").prop("readonly",true);
-
-		$("#editarPrecioVenta").val(editarPorcentaje);
-		$("#editarPrecioVenta").prop("readonly",true);
-
-	}
-
-})
-
-$(".porcentaje").on("ifUnchecked",function(){
-
-	$("#nuevoPrecioVenta").prop("readonly",false);
-	$("#editarPrecioVenta").prop("readonly",false);
-
-})
-
-$(".porcentaje").on("ifChecked",function(){
-
-	$("#nuevoPrecioVenta").prop("readonly",true);
-	$("#editarPrecioVenta").prop("readonly",true);
-
-})
 
 /*=============================================
 SUBIENDO LA FOTO DEL PRODUCTO
@@ -247,7 +189,6 @@ $(".tablaProductos tbody").on("click", "button.btnEditarProducto", function(){
 
            $("#editarStock").val(respuesta["stock"]);
 
-           $("#editarPrecioCompra").val(respuesta["precio_compra"]);
 
            $("#editarPrecioVenta").val(respuesta["precio_venta"]);
 
